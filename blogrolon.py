@@ -8,7 +8,7 @@ from contextlib import closing
 
 
 # configuration
-DATABASE = 'flaskr.db'
+DATABASE = 'blogrolon.db'
 DEBUG = True
 SECRET_KEY = 'development key'
 USERNAME = 'admin'
@@ -17,7 +17,7 @@ PASSWORD = 'default'
 # create our little application :)
 app = Flask(__name__)
 app.config.from_object(__name__)
-# app.config.from_envvar('FLASKR_SETTINGS', silent=True)
+# app.config.from_envvar('BLOGROLON_SETTINGS', silent=True)
 
 
 def connect_db():
